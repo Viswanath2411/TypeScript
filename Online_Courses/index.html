@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>index.html</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="JavaScript/script.js"></script>
+    </head>
+    
+    <body>
+        <div id = "loginpage">
+            <h2>Login:</h2>
+            User Id <input type ="text" id = "userid">
+            <br>
+            <p>If you are New user? Please  <button onclick="newUser()" id ="signup" >SIGN-UP</button></p>
+             <br>
+             <br>   
+
+            <button id="submit" onclick="existingUser()">Submit</button>
+        </div>
+
+        <div id = "registerpage">
+            <h2>Sign Up</h2>
+            User Name <input type ="text" id = "username"><br><br>
+            Age <input type ="number" id = "userage"><br><br>
+            Mobile number <input type = "text" id = "usermob"><br><br>
+
+            <button id = "regis" onclick="addUser()">Register</button>
+        </div>
+
+        <div id ="existuserpage">
+            <h2>Welcome!</h2>
+
+            <label id = "dispname" ></label><br>
+            <button id ="availcourse" onclick="availCourse()">Available Courses</button>
+
+            <button id = "entrollcourse" onclick="displayCourse()">Entrolled Courses</button>
+        </div>
+
+        <div id ="newentrollpage">
+            <h2>Entroll your courses:</h2>
+
+            <select type = "option" id = "courses" >
+                <option>select</option>
+                <option>C-Sharp(C#)</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+                <option>TypeScript</option>
+            </select><br><br>
+
+            Number of Days:<br>
+            <input type = "number" id = "daysreq"> <br>
+            <br>
+
+            <button id ="entroll" onclick = "addCourse()">Entroll</button>
+        </div>
+
+        <div id = "coursehistorypage">
+            <h2>Courses Entrolled:</h2><br>
+            <br>
+
+            User Id = <label id = "histuserid" ></label><br><br>
+            User Name = <label id = "histusername"></label><br><br>
+            User Age = <label id = "histuserage" ></label><br><br>
+            User Mobile Number = <label id = "histusermob"></label><br><br>
+            User Course Id's = <label id = "histcourseid" ></label><br><br>
+            User Course Name = <label id = "histcoursename"></label><br><br>
+            Total Days = <label id = "histcoursedays" ></label>
+            
+        </div>
+
+
+
+    </body>
+</html>
